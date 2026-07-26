@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial;
+}
+
+/* Layout */
+.watch-page {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Main video */
+.main-video {
+  flex: 2;
+}
+
+video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Recommended video */
+.rec-video {
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.rec-video img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.rec-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.rec-info p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #272727;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  background: #3a3a3a;
+}
+
+/* Active states */
+.liked {
+  background: #3ea6ff !important;
+}
+
+.subscribed {
+  background: red !important;
+}
+.comments-section {
+  margin-top: 30px;
+}
+
+.comment-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.comment-input button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #3ea6ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Single comment */
+.comment {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.comment img {
+  border-radius: 50%;
+}
+
+.comment-content {
+  background: #1f1f1f;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.comment-content p {
+  margin: 2px 0;
+  font-size: 14px;
+}

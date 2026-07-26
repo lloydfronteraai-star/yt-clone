@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful YouTube Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">🎬 MyTube</div>
+
+  <input type="text" id="search" placeholder="Search videos...">
+
+  <button onclick="searchVideos()">🔍</button>
+</div>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <p onclick="loadVideos()">🏠 Home</p>
+    <p>🔥 Trending</p>
+    <p>🎵 Music</p>
+    <p>🎮 Gaming</p>
+  </div>
+
+  <!-- Videos -->
+  <div id="videos" class="videos"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Video</title>
+  <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+
+<div class="watch-page">
+
+  <!-- LEFT: Main Video -->
+  <div class="main-video">
+    <video id="player" controls autoplay></video>
+
+    <h2 id="title"></h2>
+    <p id="channel"></p>
+    <p id="views"></p>
+    <div class="actions">
+  <button id="likeBtn">👍 <span id="likeCount">0</span></button>
+  <button id="subBtn">🔔 Subscribe</button>
+  <div class="comments-section">
+
+  <h3>💬 Comments</h3>
+
+  <!-- Add comment -->
+  <div class="comment-input">
+    <input type="text" id="commentText" placeholder="Add a comment...">
+    <button onclick="addComment()">Post</button>
+  </div>
+
+  <!-- Comments list -->
+  <div id="commentsList"></div>
+
+</div>
+</div>
+  </div>
+
+  <!-- RIGHT: Recommendations -->
+  <div class="sidebar" id="recommendations"></div>
+
+</div>
+
+<script src="watch.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Roboto, Arial;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #202020;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.navbar input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background: #121212;
+  color: white;
+}
+
+.navbar button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Layout */
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #181818;
+  padding: 10px;
+}
+
+.sidebar p {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar p:hover {
+  background: #383838;
+}
+
+/* Videos grid */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Video card */
+.video-card {
+  cursor: pointer;
+}
+
+/* Thumbnail */
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Duration */
+.duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: black;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* Info */
+.video-info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.channel-logo {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.video-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.channel {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.meta {
+  font-size: 12px;
+  color: #888;
+}
