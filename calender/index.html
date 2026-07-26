@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Web Calendar</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Web Calendar</h1>
+        <div class="controls">
+          <button id="prev">‹</button>
+          <div id="monthYear"></div>
+          <button id="next">›</button>
+        </div>
+      </header>
+
+      <main>
+        <div id="calendar"></div>
+      </main>
+
+      <footer>
+        <small>Click a day to add an event (stored in localStorage).</small>
+      </footer>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
