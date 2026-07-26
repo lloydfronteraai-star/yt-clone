@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator">
+    <h1>Calculator</h1>
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button type="button" class="btn function" data-action="clear">C</button>
+      <button type="button" class="btn function" data-action="delete">⌫</button>
+      <button type="button" class="btn function" data-action="percent">%</button>
+      <button type="button" class="btn operator" data-action="/">÷</button>
+
+      <button type="button" class="btn" data-action="7">7</button>
+      <button type="button" class="btn" data-action="8">8</button>
+      <button type="button" class="btn" data-action="9">9</button>
+      <button type="button" class="btn operator" data-action="*">×</button>
+
+      <button type="button" class="btn" data-action="4">4</button>
+      <button type="button" class="btn" data-action="5">5</button>
+      <button type="button" class="btn" data-action="6">6</button>
+      <button type="button" class="btn operator" data-action="-">−</button>
+
+      <button type="button" class="btn" data-action="1">1</button>
+      <button type="button" class="btn" data-action="2">2</button>
+      <button type="button" class="btn" data-action="3">3</button>
+      <button type="button" class="btn operator" data-action="+">+</button>
+
+      <button type="button" class="btn" data-action="0">0</button>
+      <button type="button" class="btn" data-action=".">.</button>
+      <button type="button" class="btn equals" data-action="=">=</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
